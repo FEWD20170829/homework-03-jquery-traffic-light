@@ -1,19 +1,22 @@
 $(function(){
 
+$('#stopButton').click(switchRed);
+
 function switchRed(){
-	$(".bulb").css("background-color","red");
+	$('#stopLight').css('background-color','red');
 }
 
-$("#stopButton").click(switchRed);
+$('#slowButton').click(switchYellow);
 
+function switchYellow(){
+	$('#slowLight').css('background-color','yellow')
+}
 
+$('#goButton').click(switchGreen);
 
-
-
-
-
-
-
+function switchGreen(){
+	$('#goLight').css('background-color','green')
+}
 
 
 });
