@@ -21,6 +21,10 @@ h1 {
   cursor: pointer;
 }
 
+.red-background {
+  background-color: red;
+}
+
 #traffic-light {
   height: 550px;
   width: 200px;
