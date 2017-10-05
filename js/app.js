@@ -7,19 +7,25 @@ $(function() {
 
 
   function redLight() {
+    clearLights();
     $("#stopLight").css("background-color", "red");
     $("#bulb").css("backgroundColor", "black");
+   
   }
 
 
   function yellowLight() {
+    clearLights();
     $("#slowLight").css("background-color", "yellow");
     $("#bulb").css("backgroundColor", "black");
+    
   }  
 
   function greenLight() {
+    clearLights();
     $("#goLight").css("background-color", "green");
     $("#bulb").css("backgroundColor", "black");
+  
   }
 
   function clearLights() {
