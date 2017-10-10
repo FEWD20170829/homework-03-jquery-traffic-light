@@ -39,3 +39,27 @@ h1 {
   margin: 25px auto;
   transition: background 500ms;
 }
+
+#stopLight.on {
+  background-color: red;
+}
+
+#slowLight.on {
+  background-color: yellow;
+}
+
+#goLight.on {
+  background-color: green;
+}
+/*
+.red {
+  background-color: red;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.green {
+  background-color: green;
+}*/
