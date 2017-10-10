@@ -13,7 +13,7 @@ $(function(){
 
     clearLights();
 
-    $("#stopLight").addClass("red");
+    $("#stopLight").addClass("on");
   }
 
   //turn yellow light on
@@ -24,7 +24,7 @@ $(function(){
 
     clearLights();
 
-    $("#slowLight").addClass("yellow");
+    $("#slowLight").addClass("on");
   }
 
   //turn green light on
@@ -34,13 +34,13 @@ $(function(){
 
     clearLights();
 
-    $("#goLight").addClass("green");
+    $("#goLight").addClass("on");
   }
 
   function clearLights() {
-    $("#stopLight").removeClass("red");
-    $("#slowLight").removeClass("yellow");
-    $("#goLight").removeClass("green");
+    $(".bulb").removeClass("on");
+    // $("#slowLight").removeClass("on");
+    // $("#goLight").removeClass("on");
   }
 
 });

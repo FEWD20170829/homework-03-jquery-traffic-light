@@ -40,6 +40,18 @@ h1 {
   transition: background 500ms;
 }
 
+#stopLight.on {
+  background-color: red;
+}
+
+#slowLight.on {
+  background-color: yellow;
+}
+
+#goLight.on {
+  background-color: green;
+}
+/*
 .red {
   background-color: red;
 }
@@ -50,4 +62,4 @@ h1 {
 
 .green {
   background-color: green;
-}
+}*/
