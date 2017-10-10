@@ -9,8 +9,6 @@ $(function(){
 
   function redLight() {
 
-    console.log("stopLight was clicked!");
-
     clearLights();
 
     $("#stopLight").addClass("on");
@@ -20,8 +18,6 @@ $(function(){
 
   function yellowLight() {
 
-    console.log("slowLight was clicked!");
-
     clearLights();
 
     $("#slowLight").addClass("on");
@@ -29,8 +25,6 @@ $(function(){
 
   //turn green light on
   function greenLight() {
-
-    console.log("goLight was clicked!");
 
     clearLights();
 
