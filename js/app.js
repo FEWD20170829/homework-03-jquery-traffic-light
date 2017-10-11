@@ -1,21 +1,36 @@
 $(document).ready(function() {
 
-  $('#stopButton').click(stopLight);
-  $('#slowButton').click(slowLight);
-  $('#goButton').click(goLight);
+  $("#stopButton").click(redLight);
+  $("#slowButton").click(yellowLight);
+  $("#goButton").click(greenLight);
 
-  function stopLight() {
-  $("#stopButton").attr('class', 'red');
-  console.log('clicked on stopButton')
+  function redLight() {
+    clearLights();
+    $("#stopLight").css("background-color", "red");
+    $("#bulb").css("backgroundColor", "black");
+  
+  }
+
+  function yellowLight() {
+    clearLights();
+    $("#slowLight").css("background-color", "yellow");
+    $("#bulb").css("backgroundColor", "black");
 
   }
 
-  function slowLight() {
-    $('#slowButton').attr('class', 'yellow');
+  function greenLight() {
+    clearLights();
+    $("#goLight").css("background-color", "green");
+    $("#bulb").css("backgroundColor", "black");
   }
 
-  function goLight() {
-    $("#goButton").attr('class', 'green');
+  function clearLights() {
 
+    $("#stopLight").css("background-color" , "black");
+    $("#slowLight").css("background-color" , "black");
+    $("#goLight").css("background-color" , "black");
   }
+
+
+});
   
